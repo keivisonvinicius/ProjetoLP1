@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-h1 {
+h1, p {
     text-align: center;
 }
 
@@ -16,7 +16,8 @@ h1 {
 label, input, textarea, button {
     display: block;
     margin-bottom: 10px;
-}
+    width: 40%; 
+}    
 
 table {
     width: 100%;
@@ -24,7 +25,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #b3a9a9;
 }
 
 th, td {
@@ -33,5 +34,5 @@ th, td {
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
