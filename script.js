@@ -19,7 +19,7 @@ function addTask() {
     cell1.innerHTML = title;
     cell2.innerHTML = description;
     cell3.innerHTML = time;
-    cell4.innerHTML = '<button onclick="deleteTask(this)">Excluir</button>';
+    cell4.innerHTML = '<button onclick="editTask(this)">Editar</button> <button onclick="deleteTask(this)">Excluir</button>';
 
     document.getElementById("title").value = "";
     document.getElementById("description").value = "";
@@ -31,3 +31,19 @@ function deleteTask(btn) {
     row.parentNode.removeChild(row);
 }
 
+function editTask(btn) {
+    var row = btn.parentNode.parentNode;
+    var cells = row.getElementsByTagName("td");
+
+    var title = cells[0].innerHTML;
+    var description = cells[1].innerHTML;
+    var time = cells[2].innerHTML;
+
+    document.getElementById("title").value = title;
+    document.getElementById("description").value = description;
+    document.getElementById("time").value = time;
+
+    deleteTask(btn);
+
+    document.getElementById("title").focus();
+}
