@@ -47,3 +47,4 @@ function editTask(btn) {
 
     document.getElementById("title").focus();
 }
+
