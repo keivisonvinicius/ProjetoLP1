@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas | KS</title>
+    <link rel="icon" type="image/x-icon" href="./logo_ks/icon-logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box">
+        <fieldset>
+            <legend><b>GERENCIADOR DE TAREFAS</b></legend>
+            <p><b>Gerencie suas tarefas diárias de maneira prática e funcional.</b></p>
+    <div id="form-container">
+            <label for="title"><strong>Título da tarefa:</strong></label>
+            <textarea id="title" placeholder="Informe o título da tarefa"></textarea>
+            <label for="description"><strong>Descrição da tarefa:</strong></label>
+            <textarea id="description" placeholder="Descreva a tarefa"></textarea>
+            <label for="time"><strong>Horário da tarefa:</strong></label>
+            <input type="time" id="time" placeholder="Adicione o horário da atividade">
+            <button onclick="addTask()">Adicionar</button>
+            </fieldset>
+    </div>
+    <br>
+    </div>
+    <table id="task-table">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Descrição</th>
+                <th>Horário</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="task-list">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
